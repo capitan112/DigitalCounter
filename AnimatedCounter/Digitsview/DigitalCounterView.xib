@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DigitalCounterView" customModule="DigitalCounter" customModuleProvider="target">
+            <connections>
+                <outlet property="hundredsDigitView" destination="SFm-0f-9ce" id="gF1-sM-0J2"/>
+                <outlet property="onesDigitView" destination="4oG-hi-KFU" id="waZ-Fn-Z6Z"/>
+                <outlet property="tensDigitView" destination="o6U-vw-5JO" id="fPa-0g-7LZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iAe-LG-ZeT">
+                    <rect key="frame" x="5.5" y="3" width="150" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-0f-9ce" customClass="DigitView" customModule="DigitalCounter" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="cJw-1b-Mky"/>
+                                <constraint firstAttribute="height" constant="100" id="iBL-LY-Wet"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6U-vw-5JO" customClass="DigitView" customModule="DigitalCounter" customModuleProvider="target">
+                            <rect key="frame" x="50" y="0.0" width="50" height="100"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oG-hi-KFU" customClass="DigitView" customModule="DigitalCounter" customModuleProvider="target">
+                            <rect key="frame" x="100" y="0.0" width="50" height="100"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="iAe-LG-ZeT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NqW-c9-CpN"/>
+                <constraint firstItem="iAe-LG-ZeT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zhC-ux-TbX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-484.78260869565219" y="4.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
